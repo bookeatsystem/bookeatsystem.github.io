@@ -1,144 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Book Eat</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Book Eat</title>
+  <meta content="Book Eat Restaurant Reservation Online Table" name="description">
+  <meta content="Book Eat Restaurant Reservation Online Table" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/myStyle.css" rel="stylesheet">
+
 </head>
+
 <body>
-	
-	
-	<div class="size1 bg0 where1-parent">
-		<!-- Coutdown -->
-		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2" style="background-image: url('images/bg01.jpg');">
-			<div class="wsize2 flex-w flex-c-m cd100 js-tilt">
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 days">35</span>
-					<span class="s2-txt4">Days</span>
-				</div>
 
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 hours">17</span>
-					<span class="s2-txt4">Hours</span>
-				</div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
 
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 minutes">50</span>
-					<span class="s2-txt4">Minutes</span>
-				</div>
+      <h1 class="logo mr-auto">
+        <img src="assets/img/logo.png" alt="Logo">
+        &nbsp;
+        <a href="index.html">Book Eat</a>
+      </h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 seconds">39</span>
-					<span class="s2-txt4">Seconds</span>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Form -->
-		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
-			<div class="wrap-pic1">
-				<!-- <img src="images/icons/logo.png" alt="LOGO"> -->
-				<h1>Book Eat</h1>
-			</div>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="book-a-table text-center">
+            <a href="#book-eat-app">Book a table</a>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
 
-			<div class="p-t-50 p-b-60">
-				<p class="m1-txt1 p-b-36">
-					Our website is <span class="m1-txt2">Coming Soon</span>, follow us for update now!
-				</p>
+    </div>
+  </header><!-- End Header -->
 
-				<form class="contact100-form validate-form">
-					<div class="wrap-input100 m-b-10 validate-input" data-validate = "Name is required">
-						<input class="s2-txt1 placeholder0 input100" type="text" name="name" placeholder="Your Name">
-						<span class="focus-input100"></span>
-					</div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-left" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to </br> <span>Book</span> Eat</h1>
+          <h2>Enjoy the most out of your restaurant experience 
+            <br> by booking a restaurant with us!
+          </h2>
 
-					<div class="wrap-input100 m-b-20 validate-input" data-validate = "Email is required: ex@abc.xyz">
-						<input class="s2-txt1 placeholder0 input100" type="text" name="email" placeholder="Email Address">
-						<span class="focus-input100"></span>
-					</div>
+          <div class="btns">
+            <a href="https://www.facebook.com/bookeatja" class="btn-book animated fadeInUp scrollto facebook mySocial"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/bookeat_/" class="btn-book animated fadeInUp scrollto instagram mySocial"><i class="bx bxl-instagram"></i></a>
+            <a href="#book-eat-app" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=GlrxcuEDyF8" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a>
+        </div> -->
 
-					<div class="w-full">
-						<button class="flex-c-m s2-txt2 size4 bg1 bor1 hov1 trans-04">
-							Subscribe
-						</button>
-					</div>
-				</form>
+      </div>
+    </div>
+  </section><!-- End Hero -->
 
-				<p class="s2-txt3 p-t-18">
-					And don’t worry, we hate spam too! You can unsubcribe at anytime.
-				</p>
-			</div>
-
-			<div class="flex-w">
-				<a href="#" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
-					<i class="fa fa-facebook"></i>
-				</a>
-
-				<a href="#" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
-					<i class="fa fa-twitter"></i>
-				</a>
-
-				<a href="#" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
-					<i class="fa fa-youtube-play"></i>
-				</a>
-			</div>
-		</div>
-	</div>
+  <main id="main">
 
 
+    <!-- ======= BookEatApp ======= -->
+    <section id="book-eat-app" class="why-us">
+      <span id= "vwSearch" class= "myView"> 
+      <div class="container" data-aos="fade-up">
 
-	
+        <div class="section-title">
+          <h2>Book-Eat App</h2>
+          <p>Choose a Restaurant</p>
+        </div>
 
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 2021,
-			endtimeMonth: 1,
-			endtimeDate: 01,
-			endtimeHours: 0,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+        <div class="row">
+          <div class="col-xs-12 col-lg-6 col-md-6 form-group myCenter">
+
+          <form onsubmit="return false;" class= "myForm">
+            <input type="text" name="search" placeholder="Search" class="myInput">
+            <input type="submit" value="Search" class= "myInputButton">
+          </form>
+          <br>
+          <br>
+        </div>
+
+        <div class="row myCenter">
+
+          <div class="col-lg-3 mt-3 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card shadow-lg p-3 mb-5 rounded myCard">
+              <img class="card-img-top img-fluid" src="assets/img/restaurants/mousonBar.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Mouson Bar & Restaurant</h4>
+                <h6 class="card-title subTitle">Mpoumpoulinas 15, Nicosia, 1060</h6>
+                <p class="card-text">International</p>
+                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat</a>
+                <span class="myKeywords myHidden">
+                  Brunch, dinner, Mouson, Muson, bar , international
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mt-3 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card shadow-lg p-3 mb-5 rounded myCard">
+              <img class="card-img-top img-fluid" src="assets/img/restaurants/theOldStationPark.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">The Old Station Park</h4>
+                <h6 class="card-title subTitle">Dimokratias 95,  Agios Dometios</h6>
+                <p class="card-text">Grill, Souvlakia</p>
+                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat</a>
+                <span class="myKeywords myHidden">
+                  Old station park, park, playground, Old Station, souvlakia, grill 
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mt-3 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card shadow-lg p-3 mb-5 rounded myCard">
+              <img class="card-img-top img-fluid" src="assets/img/restaurants/cafeMercedes.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Cafe Mercedes</h4> <br>
+                <h6 class="card-title subTitle">Ledras 51, Nicosia 1011, Cyprus</h6>
+                <p class="card-text">Asian International</p>
+                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat</a>
+                <span class="myKeywords myHidden">
+                  cafe mercendes mercedes mercendes asian international ledras Stou Roussia stou roushia stou roushia tavern mediterranean agios dometios
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mt-3 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card shadow-lg p-3 mb-5 rounded myCard">
+              <img class="card-img-top img-fluid" src="assets/img/restaurants/stouRoussia.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Stou Roussia</h4> <br>
+                <h6 class="card-title subTitle">Dimokratias Avenue 31, Agios Dometios, Nicosia</h6>
+                <p class="card-text">Mediterranean</p>
+                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat</a>
+                <span class="myKeywords myHidden">
+                  stou roushia stou roushia tavern mediterranean agios dometios                
+                </span>
+              </div>
+            </div>
+          </div>
+        
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </span>
+
+    <span hidden id= "vwBookForm" class= "myView"> 
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Reservation</h2>
+          <p>Book a Table</p>
+        </div>
+
+        <form onsubmit="return false;" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="form-row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control myFormTextBox" id="name" placeholder="Your Name">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="email" class="form-control myFormTextBox" name="email" id="email" placeholder="Your Email">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" class="form-control myFormTextBox" name="phone" id="phone" placeholder="Your Phone">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="date" name="date" class="form-control myFormTextBox" id="date" placeholder="Date">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <select id="inputTime" name="inputTime" class="form-control myFormTextBox">
+                <option value="volvo">12:00 PM</option>
+                <option value="volvo">12:30 PM</option>
+                <option value="volvo">13:00 PM</option>
+                <option value="volvo">13:30 PM</option>
+                <option value="volvo">14:00 PM</option>
+                <option value="volvo">14:30 PM</option>
+                <option value="volvo">15:00 PM</option>
+                <option value="volvo">15:30 PM</option>
+                <option value="volvo">16:00 PM</option>
+                <option value="volvo">16:30 PM</option>
+                <option value="volvo">17:00 PM</option>
+                <option value="volvo">17:30 PM</option>
+                <option value="volvo">18:00 PM</option>
+                <option value="volvo">18:30 PM</option>
+                <option value="volvo">19:00 PM</option>
+                <option value="volvo">19:30 PM</option>
+                <option value="volvo">20:00 PM</option>
+                <option value="volvo">20:30 PM</option>
+                <option value="volvo">21:00 PM</option>
+                <option value="volvo">21:30 PM</option>
+                <option value="volvo">22:00 PM</option>
+                <option value="volvo">22:30 PM</option>
+                <option value="volvo">23:00 PM</option>
+                <option value="volvo">23:30 PM</option>
+              </select>           
+             </div>
+
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="number" class="form-control myFormTextBox" name="people" id="people" placeholder="# of people">
+            </div>
+
+            <div class="col-lg-12 col-md-12 form-group">
+              <textarea class="form-control myFormTextBox" name="message" rows="5" placeholder="Message"></textarea>
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="checkbox" id="chkBabyChair" name="chkBabyChair">
+              <label for="chkBabyChair"> Baby Chair</label><br>
+              <input type="checkbox" id="chkDisabledPerson" name="chkDisabledPerson">
+              <label for="chkDisabledPerson"> Disabled Person</label><br>
+              <input type="checkbox" id="chkCloseToTv" name="chkCloseToTv">
+              <label for="chkCloseToTv"> Close to TV</label><br>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="radio" id="radioFood" name="foodOrDrink" value="Food">
+              <label for="radioFood">Food</label><br>
+              <input type="radio" id="radioDrink" name="foodOrDrink" value="Drink">
+              <label for="radioDrink">Drink</label><br>
+              <input type="radio" id="radioBoth" name="foodOrDrink" value="Both">
+              <label for="radioBoth">Both</label>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="radio" id="radioSmoker" name="smokerOrNonSmoker" value="Smoker">
+              <label for="radioSmoker">Smoker</label><br>
+              <input type="radio" id="radioNonSmoker" name="smokerOrNonSmoker" value="Non-Smoker">
+              <label for="radioNonSmoker">Non-Smoker</label><br>
+            </div>
+          </div>
+          <!-- <div class="form-group">
+            <textarea class="form-control myFormTextBox" name="message" rows="5" placeholder="Message"></textarea>
+          </div> -->
+
+          <div class="mb-3 myHidden">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center ">
+            <button id= "cmdBookFormSubmit" type="submit" class= "myFormButton myButtonMargin">Book a Table</button>
+            <button id= "cmdBookFormBack" type="submit" class= "myFormButton myButtonMargin">Cancel Reservation</button>
+          </div>
+        </form>
+
+      </div>
+    </span>
+    </section><!-- End BookEatApp Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Our Motivation</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img myCenter">
+              <img src="assets/img/about.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <p>
+              <br>
+              Book-eat is a company designed web-application initiated in order to facilitate reservation process by introducing online reservation system. Enjoy the most out of your restaurant experience by booking a restaurant with us!
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Click.</li>
+              <li><i class="icofont-check-circled"></i> Book.</li>
+              <li><i class="icofont-check-circled"></i> Eat.</li>
+              <li><i class="icofont-check-circled"></i> Book-Eat.</li>            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5 miniMargin">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>96 Steliou Hadjipetri Str,<br> 
+                  Strovolos, 2057, <br> 
+                  Nicosia, Cyprus</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="icofont-clock-time icofont-rotate-90"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Friday:<br>
+                  07:00 AM - 16:00 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>contactus.bookeat@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+357 96246993</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form onsubmit="javascript:void(0)" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"/>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject  (e.g. Add my Restaurant to Book-Eat)" />
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
+              </div>
+              <div class="mb-3 myHidden">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <!-- <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Book Eat</h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form onsubmit="return false;">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Book Eat</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.linkedin.com/in/marios-kelepeshis/">M.K.</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/myScript.js"></script>
 
 </body>
+
 </html>
