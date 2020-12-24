@@ -12,6 +12,11 @@
   transform: scale(1.05);
 }
 
+.myTransition {
+  transition-duration: 1s;
+  transition: all ease-in-out 0.3s;
+}
+
 /* .myInput {
 
   border-radius: 50px!important;
