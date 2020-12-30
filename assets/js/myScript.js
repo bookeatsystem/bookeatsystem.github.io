@@ -2,6 +2,27 @@ window.myGlobalSpace= {};
 window.myGlobalSpace.allRestID= [];
 window.myGlobalSpace.RestID= "None";
 
+
+
+wakeUpServer= () => {
+  let data= [];
+  data.push("None");
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      // alert ("Okay");
+      // let table= JSON.parse(JSON.parse(this.responseText).Message);
+    } else if (this.readyState == 4 && this.status != 200) {
+      // alert ("Error: " + this.responseText);
+    }
+  };
+  xhttp.open("POST", "https://bookeatbackend.herokuapp.com/post/wakeUp", true);
+  xhttp.setRequestHeader("Content-type", "text/plain; charset=utf-8");
+  xhttp.send(JSON.stringify(data));
+}
+
+wakeUpServer();
+
 showView = (v) => {
     m= document.getElementById(v)
     m.hidden= false;
