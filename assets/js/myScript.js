@@ -2,14 +2,13 @@ window.myGlobalSpace= {};
 window.myGlobalSpace.allRestID= [];
 window.myGlobalSpace.RestID= "None";
 
-
-
 wakeUpServer= () => {
   let data= [];
   data.push("None");
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
+      console.log("Server is up!")
       // alert ("Okay");
       // let table= JSON.parse(JSON.parse(this.responseText).Message);
     } else if (this.readyState == 4 && this.status != 200) {
