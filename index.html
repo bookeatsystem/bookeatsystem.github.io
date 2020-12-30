@@ -102,7 +102,7 @@
           <div class="col-xs-12 col-lg-6 col-md-6 form-group myCenter">
 
           <form onsubmit="return false;" class= "myForm">
-            <input type="text" name="search" placeholder="Search" class="myInput">
+            <input type="text" name="search" placeholder="Search" class="myInput" id="txtSearch">
             <input type="submit" value="Search" class= "myInputButton">
           </form>
           <br>
@@ -111,60 +111,68 @@
 
         <div class="row myCenter">
 
-          <div class="col-lg-3 mt-3 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div id= "mousonBar" class="col-lg-3 mt-3 mt-lg-0 myRestCard" data-aos="zoom-in" data-aos-delay="200">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/mousonBar.jpg" alt="Card image cap">
               <div class="card-body">
-                <h4 class="card-title">Mouson Bar & Restaurant</h4>
-                <h6 class="card-title subTitle">Mpoumpoulinas 15, Nicosia, 1060</h6>
-                <p class="card-text">International</p>
-                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat</a>
-                <span class="myKeywords myHidden">
+                <h4 id= "mousonBarName" class="card-title">Mouson Bar & Restaurant</h4>
+                <h6 id= "mousonBarAddress" class="card-title subTitle">Mpoumpoulinas 15, Nicosia, 1060</h6>
+                <p id= "mousonBarCuisine" class="card-text">International</p>
+                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat
+                  <span hidden>mousonBar</span>
+                </a>
+                <span id= "mousonBarKeywords" class="myKeywords myHidden">
                   Brunch, dinner, Mouson, Muson, bar , international
                 </span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 mt-3 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div id= "theOldStationPark" class="col-lg-3 mt-3 mt-lg-0 myRestCard" data-aos="zoom-in" data-aos-delay="200">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/theOldStationPark.jpg" alt="Card image cap">
               <div class="card-body">
-                <h4 class="card-title">The Old Station Park</h4>
-                <h6 class="card-title subTitle">Dimokratias 95,  Agios Dometios</h6>
-                <p class="card-text">Grill, Souvlakia</p>
-                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat</a>
-                <span class="myKeywords myHidden">
+                <h4 id= "theOldStationParkName" class="card-title">The Old Station Park</h4>
+                <h6 id= "theOldStationParkAddress" class="card-title subTitle">Dimokratias 95,  Agios Dometios</h6>
+                <p id= "theOldStationParkCuisine" class="card-text">Grill, Souvlakia</p>
+                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat
+                  <span hidden>theOldStationPark</span>
+                </a>
+                <span id= "theOldStationParkKeywords" class="myKeywords myHidden">
                   Old station park, park, playground, Old Station, souvlakia, grill 
                 </span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 mt-3 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div id= "cafeMercedes" class="col-lg-3 mt-3 mt-lg-0 myRestCard" data-aos="zoom-in" data-aos-delay="200">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/cafeMercedes.jpg" alt="Card image cap">
               <div class="card-body">
-                <h4 class="card-title">Cafe Mercedes</h4> <br>
-                <h6 class="card-title subTitle">Ledras 51, Nicosia 1011, Cyprus</h6>
-                <p class="card-text">Asian International</p>
-                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat</a>
-                <span class="myKeywords myHidden">
+                <h4 id= "cafeMercedesName" class="card-title">Cafe Mercedes</h4> <br>
+                <h6 id= "cafeMercedesAddress" class="card-title subTitle">Ledras 51, Nicosia 1011, Cyprus</h6>
+                <p id= "cafeMercedesCuisine" class="card-text">Asian International</p>
+                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat
+                  <span hidden>cafeMercedes</span>
+                </a>
+                <span id= "cafeMercedesKeywords" class="myKeywords myHidden">
                   cafe mercendes mercedes mercendes asian international ledras Stou Roussia stou roushia stou roushia tavern mediterranean agios dometios
                 </span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 mt-3 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div id= "stouRoussia" class="col-lg-3 mt-3 mt-lg-0 myRestCard" data-aos="zoom-in" data-aos-delay="200">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/stouRoussia.jpg" alt="Card image cap">
               <div class="card-body">
-                <h4 class="card-title">Stou Roussia</h4> <br>
-                <h6 class="card-title subTitle">Dimokratias Avenue 31, Agios Dometios, Nicosia</h6>
-                <p class="card-text">Mediterranean</p>
-                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat</a>
-                <span class="myKeywords myHidden">
+                <h4 id= "stouRoussiaName" class="card-title">Stou Roussia</h4> <br>
+                <h6 id= "stouRoussiaAddress" class="card-title subTitle">Dimokratias Avenue 31, Agios Dometios, Nicosia</h6>
+                <p id= "stouRoussiaCuisine" class="card-text">Mediterranean</p>
+                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat
+                  <span hidden>stouRoussia</span>
+                </a>
+                <span id= "stouRoussiaKeywords" class="myKeywords myHidden">
                   stou roushia stou roushia tavern mediterranean agios dometios                
                 </span>
               </div>
@@ -190,6 +198,9 @@
 
         <form onsubmit="return false;" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
           <div class="form-row">
+            <div hidden class="col-lg-12 col-md-12 form-group">
+              <input disabled type="text" name="restaurant" class="form-control myFormTextBox" id="restaurant" placeholder="Restaurant">
+            </div>
             <div class="col-lg-4 col-md-6 form-group">
               <input type="text" name="name" class="form-control myFormTextBox" id="name" placeholder="Your Name">
             </div>
