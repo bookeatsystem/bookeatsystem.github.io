@@ -201,6 +201,9 @@
             <div hidden class="col-lg-12 col-md-12 form-group">
               <input disabled type="text" name="restaurant" class="form-control myFormTextBox" id="restaurant" placeholder="Restaurant">
             </div>
+            <div class="col-lg-12 col-md-12 form-group">
+              <h4 id="lblName" class="card-title">Restaurant Name</h4>            
+            </div>
             <div class="col-lg-4 col-md-6 form-group">
               <input type="text" name="name" class="form-control myFormTextBox" id="name" placeholder="Your Name">
             </div>
@@ -215,36 +218,36 @@
             </div>
             <div class="col-lg-4 col-md-6 form-group">
               <select id="inputTime" name="inputTime" class="form-control myFormTextBox">
-                <option value="volvo">09:00 AM</option>
-                <option value="volvo">09:30 AM</option>
-                <option value="volvo">10:00 AM</option>
-                <option value="volvo">10:30 AM</option>
-                <option value="volvo">11:00 AM</option>
-                <option value="volvo">11:30 AM</option>
-                <option value="volvo">12:00 PM</option>
-                <option value="volvo">12:30 PM</option>
-                <option value="volvo">13:00 PM</option>
-                <option value="volvo">13:30 PM</option>
-                <option value="volvo">14:00 PM</option>
-                <option value="volvo">14:30 PM</option>
-                <option value="volvo">15:00 PM</option>
-                <option value="volvo">15:30 PM</option>
-                <option value="volvo">16:00 PM</option>
-                <option value="volvo">16:30 PM</option>
-                <option value="volvo">17:00 PM</option>
-                <option value="volvo">17:30 PM</option>
-                <option value="volvo">18:00 PM</option>
-                <option value="volvo">18:30 PM</option>
-                <option value="volvo">19:00 PM</option>
-                <option value="volvo">19:30 PM</option>
-                <option value="volvo">20:00 PM</option>
-                <option value="volvo">20:30 PM</option>
-                <option value="volvo">21:00 PM</option>
-                <option value="volvo">21:30 PM</option>
-                <option value="volvo">22:00 PM</option>
-                <option value="volvo">22:30 PM</option>
-                <option value="volvo">23:00 PM</option>
-                <option value="volvo">23:30 PM</option>
+                <option value="09:00 AM">09:00 AM</option>
+                <option value="09:30 AM">09:30 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="10:30 AM">10:30 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="11:30 AM">11:30 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="12:30 PM">12:30 PM</option>
+                <option value="13:00 PM">13:00 PM</option>
+                <option value="13:30 PM">13:30 PM</option>
+                <option value="14:00 PM">14:00 PM</option>
+                <option value="14:30 PM">14:30 PM</option>
+                <option value="15:00 PM">15:00 PM</option>
+                <option value="15:30 PM">15:30 PM</option>
+                <option value="16:00 PM">16:00 PM</option>
+                <option value="16:30 PM">16:30 PM</option>
+                <option value="17:00 PM">17:00 PM</option>
+                <option value="17:30 PM">17:30 PM</option>
+                <option value="18:00 PM">18:00 PM</option>
+                <option value="18:30 PM">18:30 PM</option>
+                <option value="19:00 PM">19:00 PM</option>
+                <option value="19:30 PM">19:30 PM</option>
+                <option value="20:00 PM">20:00 PM</option>
+                <option value="20:30 PM">20:30 PM</option>
+                <option value="21:00 PM">21:00 PM</option>
+                <option value="21:30 PM">21:30 PM</option>
+                <option value="22:00 PM">22:00 PM</option>
+                <option value="22:30 PM">22:30 PM</option>
+                <option value="23:00 PM">23:00 PM</option>
+                <option value="23:30 PM">23:30 PM</option>
               </select>           
              </div>
 
@@ -253,7 +256,7 @@
             </div>
 
             <div class="col-lg-12 col-md-12 form-group">
-              <textarea class="form-control myFormTextBox" name="message" rows="5" placeholder="Message"></textarea>
+              <textarea class="form-control myFormTextBox" name="message" rows="5" id="message" placeholder="Message"></textarea>
             </div>
 
             <div class="col-lg-4 col-md-6 form-group">
@@ -290,7 +293,7 @@
           </div>
           <div class="text-center ">
             <button id= "cmdBookFormSubmit" type="submit" class= "myFormButton myButtonMargin">Book a Table</button>
-            <button id= "cmdBookFormBack" type="submit" class= "myFormButton myButtonMargin">Cancel Reservation</button>
+            <button id= "cmdBookFormBack" type="submit" class= "myFormButton myButtonMargin">Back</button>
           </div>
         </form>
 

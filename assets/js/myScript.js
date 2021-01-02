@@ -58,6 +58,91 @@ showView = (v) => {
     jump("book-eat-app");
   }
 
+  document.getElementById("cmdBookFormSubmit").onclick= () => {
+    let name= document.getElementById("name").value;
+    let email= document.getElementById("email").value;
+    let phone= document.getElementById("phone").value;
+    let date= document.getElementById("date").value;
+    let inputTime= document.getElementById("inputTime").value;
+    let people= document.getElementById("people").value;
+    let message= document.getElementById("message").value;
+
+    let chkBabyChair= document.getElementById("chkBabyChair").checked;
+    let chkDisabledPerson= document.getElementById("chkDisabledPerson").checked;
+    let chkCloseToTv= document.getElementById("chkCloseToTv").checked;
+    let radioFood= document.getElementById("radioFood").checked;
+    let radioDrink= document.getElementById("radioDrink").checked;
+    let radioBoth= document.getElementById("radioBoth").checked;
+    let radioSmoker= document.getElementById("radioSmoker").checked;
+    let radioNonSmoker= document.getElementById("radioNonSmoker").checked;
+
+    if (name== "" || email== "" || phone== "" || date== "" || inputTime== "" || people== "" || message== ""){
+      alert("Error: Please fill in all fields in the form.");
+      return;
+    }
+
+    if (!radioFood && !radioDrink && !radioBoth){
+      alert("Error: Please select Food, Drink or Both.");
+      return;
+    }
+
+    if (!radioSmoker && !radioNonSmoker){
+      alert("Error: Please select Smoker or Non-Smoker.");
+      return;
+    }
+
+    // Clear fields
+    document.getElementById("name").value= "";
+    document.getElementById("email").value= "";
+    document.getElementById("phone").value= "";
+    document.getElementById("date").value= "";
+    document.getElementById("inputTime").value= "";
+    document.getElementById("people").value= "";
+    document.getElementById("message").value= "";
+
+    document.getElementById("chkBabyChair").checked= false;
+    document.getElementById("chkDisabledPerson").checked= false;
+    document.getElementById("chkCloseToTv").checked= false;
+    document.getElementById("radioFood").checked= false;
+    document.getElementById("radioDrink").checked= false;
+    document.getElementById("radioBoth").checked= false;
+    document.getElementById("radioSmoker").checked= false;
+    document.getElementById("radioNonSmoker").checked= false;
+
+    // Send Form
+    let data={};
+    data['name']= name;
+    data['email']= email;
+    data['phone']= phone;
+    data['date']= date;
+    data['inputTime']= inputTime;
+    data['people']= people;
+    data['message']= message;
+    data['chkBabyChair']= chkBabyChair;
+    data['chkDisabledPerson']= chkDisabledPerson;
+    data['chkCloseToTv']= chkCloseToTv;
+    data['radioFood']= radioFood;
+    data['radioDrink']= radioDrink;
+    data['radioBoth']= radioBoth;
+    data['radioSmoker']= radioSmoker;
+    data['radioNonSmoker']= radioNonSmoker;
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        alert("Thank you for booking a table with us!\n\nPlease expect a confirmation from the restaurant soon.");
+      } else if (this.readyState == 4 && this.status != 200) {
+        alert ("Error: Something went wrong with your reservation, please try again later.");
+        console.log(this.responseText);
+      }
+    };
+    xhttp.open("POST", "https://bookeatbackend.herokuapp.com/post/sendReservationForm", true);
+    xhttp.setRequestHeader("Content-type", "text/plain; charset=utf-8");
+    xhttp.send(JSON.stringify(data));
+
+    showView("vwSearch");
+    jump("book-eat-app");
+  }
+
   all = document.getElementsByClassName("BookEatButton");
   for (let i= 0; i < all.length; i++){
       let myId= all[i].children[0].innerHTML;
@@ -66,6 +151,7 @@ showView = (v) => {
       myButton.onclick= () => {
         window.myGlobalSpace.RestID= myId;
         document.getElementById("restaurant").value= myId;
+        document.getElementById("lblName").innerHTML= document.getElementById(myId + "Name").innerHTML;
         showView("vwBookForm");
         jump("book-eat-app");
       }
