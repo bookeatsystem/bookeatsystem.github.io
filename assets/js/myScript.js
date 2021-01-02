@@ -59,6 +59,9 @@ showView = (v) => {
   }
 
   document.getElementById("cmdBookFormSubmit").onclick= () => {
+    let restaurantID= document.getElementById("restaurant").value;
+    let restaurantName= document.getElementById("lblName").innerHTML;
+
     let name= document.getElementById("name").value;
     let email= document.getElementById("email").value;
     let phone= document.getElementById("phone").value;
@@ -76,7 +79,7 @@ showView = (v) => {
     let radioSmoker= document.getElementById("radioSmoker").checked;
     let radioNonSmoker= document.getElementById("radioNonSmoker").checked;
 
-    if (name== "" || email== "" || phone== "" || date== "" || inputTime== "" || people== "" || message== ""){
+    if (name== "" || email== "" || phone== "" || date== "" || inputTime== "" || people== ""){
       alert("Error: Please fill in all fields in the form.");
       return;
     }
@@ -111,6 +114,8 @@ showView = (v) => {
 
     // Send Form
     let data={};
+    data['restaurantID']= restaurantID;
+    data['restaurantName']= restaurantName;
     data['name']= name;
     data['email']= email;
     data['phone']= phone;
