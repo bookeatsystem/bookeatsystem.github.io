@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+
+  </head>
+  
+  <body>
+
+    <header class="w3-container w3-teal">
+      <h1>Task Management List</h1>
+    </header>
+
+    <div class="w3-container w3-threequarter w3-margin-top">
+
+    <div class="w3-container w3-card-4">
+
+    <p>
+    <input id= "txtEmail" class="w3-input" type="text" style="width:90%" required="">
+    <label>Email</label></p>
+    <p>
+    <input id= "txtName" class="w3-input" type="text" style="width:90%" required="">
+    <label>Name</label></p>
+
+    <p>
+      <button id= "cmdAddSubscriber" class="w3-button w3-section w3-teal w3-ripple"> Add Subscriber </button>
+    </p>
+
+    <table class="w3-table w3-bordered w3-striped w3-border test w3-hoverable">
+      <tbody> <tr class="w3-teal">
+        <th>Email</th>
+        <th>Name</th>
+        <th></th>
+      </tr>
+      </tbody>
+
+      <tbody id= 'myList'>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    </div>
+
+    </br>
+    </br>
+    </br>
+
+    </div>
+
+    <table style='display: none;'>
+      <tbody></div>
+        <tr id='templateRow'>
+          <td>test@test.com</td>
+          <td>Test Tester</td>
+          <td><button class="w3-button w3-red w3-ripple"> X </button></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <script src="script.js"></script>
+
+  </body>
+ 
+</html>

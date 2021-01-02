@@ -384,24 +384,24 @@
             <form onsubmit="javascript:void(0)" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"/>
+                  <input type="text" name="name" class="form-control" id="contactName" placeholder="Your Name"/>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"/>
+                  <input type="email" class="form-control" name="email" id="contactEmail" placeholder="Your Email"/>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject  (e.g. Add my Restaurant to Book-Eat)" />
+                <input type="text" class="form-control" name="subject" id="contactSubject" placeholder="Subject  (e.g. Add my Restaurant to Book-Eat)" />
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="8" id="contactMessage" placeholder="Message"></textarea>
               </div>
               <div class="mb-3 myHidden">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button id="cmdSendMessage" type="submit">Send Message</button></div>
             </form>
 
           </div>

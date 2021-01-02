@@ -71,6 +71,43 @@ showView = (v) => {
       }
   }
 
+  document.getElementById("cmdSendMessage").onclick= () => {
+    let name= document.getElementById("contactName").value;
+    let email= document.getElementById("contactEmail").value;
+    let subject= document.getElementById("contactSubject").value;
+    let message= document.getElementById("contactMessage").value;
+
+    if (name== "" || email== "" || subject== "" || message== ""){
+      alert("Error: Please fill in all fields in the form.");
+      return;
+    }
+
+    // Clear fields
+    document.getElementById("contactName").value= "";
+    document.getElementById("contactEmail").value= "";
+    document.getElementById("contactSubject").value= "";
+    document.getElementById("contactMessage").value= "";
+
+    // Send Form
+    let data={};
+    data['name']= name;
+    data['email']= email;
+    data['subject']= subject;
+    data['message']= message;
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        alert("Thank you for your message!");
+      } else if (this.readyState == 4 && this.status != 200) {
+        alert ("Error: Something went wrong, please try again later.");
+        console.log(this.responseText);
+      }
+    };
+    xhttp.open("POST", "https://bookeatbackend.herokuapp.com/post/sendContactFormMessage", true);
+    xhttp.setRequestHeader("Content-type", "text/plain; charset=utf-8");
+    xhttp.send(JSON.stringify(data));
+  }
+
   document.getElementById("txtSearch").oninput= () => {
     let q= document.getElementById("txtSearch").value.toUpperCase();
     let res= [];
