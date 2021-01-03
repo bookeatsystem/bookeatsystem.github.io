@@ -1,70 +1,366 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>W3.CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
+<html lang="en">
 
-  </head>
-  
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <header class="w3-container w3-teal">
-      <h1>Task Management List</h1>
-    </header>
+  <title>Book Eat</title>
+  <meta content="Book Eat Restaurant Reservation Online Table" name="description">
+  <meta content="Book Eat Restaurant Reservation Online Table" name="keywords">
 
-    <div class="w3-container w3-threequarter w3-margin-top">
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
-    <div class="w3-container w3-card-4">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <p>
-    <input id= "txtEmail" class="w3-input" type="text" style="width:90%" required="">
-    <label>Email</label></p>
-    <p>
-    <input id= "txtName" class="w3-input" type="text" style="width:90%" required="">
-    <label>Name</label></p>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-    <p>
-      <button id= "cmdAddSubscriber" class="w3-button w3-section w3-teal w3-ripple"> Add Subscriber </button>
-    </p>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-    <table class="w3-table w3-bordered w3-striped w3-border test w3-hoverable">
-      <tbody> <tr class="w3-teal">
-        <th>Email</th>
-        <th>Name</th>
-        <th></th>
-      </tr>
-      </tbody>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/myStyle.css" rel="stylesheet">
 
-      <tbody id= 'myList'>
+</head>
 
-      </tbody>
-    </table>
+<body>
 
-    </br>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto">
+        <img src="assets/img/logo.png" alt="Logo">
+        &nbsp;
+        <a href="index.html">Book Eat</a>
+      </h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="book-a-table text-center">
+            <a href="javascript:void(0)">Log-Out</a>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+
+    <!-- ======= Login ======= -->
+    <section id="sectionLogin" class="why-us">
+      <span id= "vwSearch" class= "myView"> 
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <br><br><br>
+          <p class="myTextCenter">Restaurant Administration</p>
+        </div>
+
+        <div class="row">
+
+
+        <div class="row myCenter" data-aos="zoom-in" data-aos-delay="200">
+
+          <div class="col-lg-12 mt-12 mt-lg-0 myRestCard">
+            <div class="card shadow-lg p-3 mb-5 rounded mySimpleCard">
+              <form onsubmit="return false;" role="form" class="php-email-form myMargin" data-aos="fade-up" data-aos-delay="100">
+                <div class="form-row">
+                  <div class="col-lg-12 col-md-12 form-group">
+                    <h4 class="card-title myTextCenter">Restaurant Log-In</h4>            
+                  </div>
+                  <div class="col-lg-7 col-md-7 form-group myCenter">
+                    <input type="text" name="username" class="form-control myFormTextBox" id="username" placeholder="Username">
+                  </div>
+                  <div class="col-lg-7 col-md-7 form-group myCenter">
+                    <input type="text" name="password" class="form-control myFormTextBox" id="password" placeholder="Password">
+                  </div>
+                </div>
+                <!-- <div class="form-group">
+                  <textarea class="form-control myFormTextBox" name="message" rows="5" placeholder="Message"></textarea>
+                </div> -->
+      
+                <div class="mb-3 myHidden">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+                </div>
+                <div class="text-center ">
+                  <button id= "cmdLogIn" type="submit" class= "myFormButton myButtonMargin">Log-In</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        
+
+        </div>
+
+      </div>
 
     </div>
 
-    </br>
-    </br>
-    </br>
+    </span>
+    </section><!-- End Login Section -->
+
+
+    <!-- ======= BookEatApp ======= -->
+    <section id="book-eat-app" class="why-us">
+      <span id= "vwSearch" class= "myView"> 
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <br><br><br>
+          <p>Reservations</p>
+        </div>
+
+        <div class="row">
+
+
+        <div class="row myCenter" data-aos="zoom-in" data-aos-delay="200">
+
+          <div id= "mousonBar" class="col-lg-12 mt-12 mt-lg-0 myRestCard">
+            <div class="card shadow-lg p-3 mb-5 rounded myCard">
+              <img class="card-img-top img-fluid" src="assets/img/restaurants/mousonBar.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 id= "mousonBarName" class="card-title">Mouson Bar & Restaurant</h4>
+                <h6 id= "mousonBarAddress" class="card-title subTitle">Mpoumpoulinas 15, Nicosia, 1060</h6>
+                <p id= "mousonBarCuisine" class="card-text">International</p>
+                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat
+                  <span hidden>mousonBar</span>
+                </a>
+                <span id= "mousonBarKeywords" class="myKeywords myHidden">
+                  Brunch, dinner, Mouson, Muson, bar , international
+                </span>
+              </div>
+            </div>
+          </div>
+        
+
+        </div>
+
+      </div>
 
     </div>
 
-    <table style='display: none;'>
-      <tbody></div>
-        <tr id='templateRow'>
-          <td>test@test.com</td>
-          <td>Test Tester</td>
-          <td><button class="w3-button w3-red w3-ripple"> X </button></td>
-        </tr>
-      </tbody>
-    </table>
+    </span>
+
+    <span hidden id= "vwBookForm" class= "myView"> 
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Reservation</h2>
+          <p>Book a Table</p>
+        </div>
+
+        <form onsubmit="return false;" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="form-row">
+            <div hidden class="col-lg-12 col-md-12 form-group">
+              <input disabled type="text" name="restaurant" class="form-control myFormTextBox" id="restaurant" placeholder="Restaurant">
+            </div>
+            <div class="col-lg-12 col-md-12 form-group">
+              <h4 id="lblName" class="card-title">Restaurant Name</h4>            
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control myFormTextBox" id="name" placeholder="Your Name">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="email" class="form-control myFormTextBox" name="email" id="email" placeholder="Your Email">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" class="form-control myFormTextBox" name="phone" id="phone" placeholder="Your Phone">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="date" name="date" class="form-control myFormTextBox" id="date" placeholder="Date">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <select id="inputTime" name="inputTime" class="form-control myFormTextBox">
+                <option value="09:00 AM">09:00 AM</option>
+                <option value="09:30 AM">09:30 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="10:30 AM">10:30 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="11:30 AM">11:30 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="12:30 PM">12:30 PM</option>
+                <option value="13:00 PM">13:00 PM</option>
+                <option value="13:30 PM">13:30 PM</option>
+                <option value="14:00 PM">14:00 PM</option>
+                <option value="14:30 PM">14:30 PM</option>
+                <option value="15:00 PM">15:00 PM</option>
+                <option value="15:30 PM">15:30 PM</option>
+                <option value="16:00 PM">16:00 PM</option>
+                <option value="16:30 PM">16:30 PM</option>
+                <option value="17:00 PM">17:00 PM</option>
+                <option value="17:30 PM">17:30 PM</option>
+                <option value="18:00 PM">18:00 PM</option>
+                <option value="18:30 PM">18:30 PM</option>
+                <option value="19:00 PM">19:00 PM</option>
+                <option value="19:30 PM">19:30 PM</option>
+                <option value="20:00 PM">20:00 PM</option>
+                <option value="20:30 PM">20:30 PM</option>
+                <option value="21:00 PM">21:00 PM</option>
+                <option value="21:30 PM">21:30 PM</option>
+                <option value="22:00 PM">22:00 PM</option>
+                <option value="22:30 PM">22:30 PM</option>
+                <option value="23:00 PM">23:00 PM</option>
+                <option value="23:30 PM">23:30 PM</option>
+              </select>           
+             </div>
+
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="number" class="form-control myFormTextBox" name="people" id="people" placeholder="# of people">
+            </div>
+
+            <div class="col-lg-12 col-md-12 form-group">
+              <textarea class="form-control myFormTextBox" name="message" rows="5" id="message" placeholder="Message"></textarea>
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="checkbox" id="chkBabyChair" name="chkBabyChair">
+              <label for="chkBabyChair"> Baby Chair</label><br>
+              <input type="checkbox" id="chkDisabledPerson" name="chkDisabledPerson">
+              <label for="chkDisabledPerson"> Disabled Person</label><br>
+              <input type="checkbox" id="chkCloseToTv" name="chkCloseToTv">
+              <label for="chkCloseToTv"> Close to TV</label><br>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="radio" id="radioFood" name="foodOrDrink" value="Food">
+              <label for="radioFood">Food</label><br>
+              <input type="radio" id="radioDrink" name="foodOrDrink" value="Drink">
+              <label for="radioDrink">Drink</label><br>
+              <input type="radio" id="radioBoth" name="foodOrDrink" value="Both">
+              <label for="radioBoth">Both</label>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="radio" id="radioSmoker" name="smokerOrNonSmoker" value="Smoker">
+              <label for="radioSmoker">Smoker</label><br>
+              <input type="radio" id="radioNonSmoker" name="smokerOrNonSmoker" value="Non-Smoker">
+              <label for="radioNonSmoker">Non-Smoker</label><br>
+            </div>
+          </div>
+          <!-- <div class="form-group">
+            <textarea class="form-control myFormTextBox" name="message" rows="5" placeholder="Message"></textarea>
+          </div> -->
+
+          <div class="mb-3 myHidden">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center ">
+            <button id= "cmdBookFormSubmit" type="submit" class= "myFormButton myButtonMargin">Book a Table</button>
+            <button id= "cmdBookFormBack" type="submit" class= "myFormButton myButtonMargin">Back</button>
+          </div>
+        </form>
+
+      </div>
+    </span>
+    </section><!-- End BookEatApp Section -->
 
 
-    <script src="script.js"></script>
+  </main><!-- End #main -->
 
-  </body>
- 
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <!-- <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Book Eat</h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form onsubmit="return false;">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Book Eat</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.linkedin.com/in/marios-kelepeshis/">M.K.</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/myScript.js"></script>
+
+</body>
+
 </html>

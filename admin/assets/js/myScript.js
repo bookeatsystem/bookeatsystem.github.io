@@ -131,7 +131,6 @@ showView = (v) => {
     data['radioBoth']= radioBoth;
     data['radioSmoker']= radioSmoker;
     data['radioNonSmoker']= radioNonSmoker;
-    data['status']= "Waiting Confirmation";
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {

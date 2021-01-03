@@ -1,0 +1,99 @@
+
+.myCard {
+  background: #0c0b09;
+  padding:0rem!important;
+  border: 2px solid #cda45e;
+  margin: 10px;
+  transition-duration: 1s;
+  transition: all ease-in-out 0.3s;
+}
+
+.myCard:hover {
+  transform: scale(1.05);
+}
+
+.mySimpleCard {
+  background: #0c0b09;
+  padding:0rem!important;
+  border: 2px solid #cda45e;
+  margin: 10px;
+  transition-duration: 1s;
+  transition: all ease-in-out 0.3s;
+}
+
+.myTransition {
+  transition-duration: 1s;
+  transition: all ease-in-out 0.3s;
+}
+
+.myButton {
+  color: #fff;
+  border: 2px solid #cda45e;
+  border-radius: 50px;
+  margin: 20px 0 0 0;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.myButton:hover {
+  background: #cda45e;
+  color: #fff;
+}
+
+.myCenter {
+  margin: auto;
+  /* width: 50%; */
+  padding: 10px;
+}
+
+.myTextCenter {
+  text-align: center;
+}
+
+.miniMargin {
+  margin-top: 1.5rem!important;
+}
+
+.mySocial {
+  font-size: 20px!important;
+  padding: 12px!important;
+}
+
+.subTitle {
+  color: #cda45e;
+}
+
+.myHidden {
+  display : none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a49b89!important;
+  opacity: 1; /* Firefox */
+}
+
+.myButtonMargin {
+  margin: 10px
+}
+
+.myMargin {
+  margin: 20px
+}
+
+
+
+
+/* a {
+  color: #cda45e;
+}
+
+a:hover {
+  color: #d9ba85;
+  text-decoration: none;
+} */
+
