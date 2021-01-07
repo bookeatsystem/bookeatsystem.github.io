@@ -85,15 +85,6 @@
   margin: 20px
 }
 
-
-
-
-/* a {
-  color: #cda45e;
+.avoidClicks {
+  pointer-events: none!important;
 }
-
-a:hover {
-  color: #d9ba85;
-  text-decoration: none;
-} */
-

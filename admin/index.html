@@ -50,7 +50,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="book-a-table text-center">
-            <a href="javascript:void(0)">Log-Out</a>
+            <a hidden id="cmdLogOut" href="javascript:void(0)">Log-Out</a>
           </li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -63,7 +63,7 @@
 
     <!-- ======= Login ======= -->
     <section id="sectionLogin" class="why-us">
-      <span id= "vwSearch" class= "myView"> 
+      <span id= "vwLoginMain" class= "myView"> 
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -72,7 +72,6 @@
         </div>
 
         <div class="row">
-
 
         <div class="row myCenter" data-aos="zoom-in" data-aos-delay="200">
 
@@ -87,189 +86,137 @@
                     <input type="text" name="username" class="form-control myFormTextBox" id="username" placeholder="Username">
                   </div>
                   <div class="col-lg-7 col-md-7 form-group myCenter">
-                    <input type="text" name="password" class="form-control myFormTextBox" id="password" placeholder="Password">
+                    <input type="password" name="password" class="form-control myFormTextBox" id="password" placeholder="Password">
                   </div>
                 </div>
-                <!-- <div class="form-group">
-                  <textarea class="form-control myFormTextBox" name="message" rows="5" placeholder="Message"></textarea>
-                </div> -->
-      
-                <div class="mb-3 myHidden">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-                </div>
+
                 <div class="text-center ">
                   <button id= "cmdLogIn" type="submit" class= "myFormButton myButtonMargin">Log-In</button>
                 </div>
               </form>
             </div>
           </div>
-        
-
         </div>
-
       </div>
-
     </div>
-
     </span>
     </section><!-- End Login Section -->
 
 
-    <!-- ======= BookEatApp ======= -->
-    <section id="book-eat-app" class="why-us">
-      <span id= "vwSearch" class= "myView"> 
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Reservations ======= -->
+    <section hidden id="sectionReservations" class="why-us">
+      <span id= "vwReservationssMain" class= "myView"> 
+      <div class="container" >
 
         <div class="section-title">
           <br><br><br>
-          <p>Reservations</p>
+          <p class="myTextCenter">Reservations</p>
         </div>
 
         <div class="row">
 
+        <div id="reservationList" class="row myCenter" >
+        </div>
 
-        <div class="row myCenter" data-aos="zoom-in" data-aos-delay="200">
+        <div hidden id="templateReservationCard" class="col-lg-12 mt-12 mt-lg-0 myRestCard">
+          <div class="card shadow-lg p-3 mb-5 rounded mySimpleCard">
+            <form onsubmit="return false;" role="form" class="php-email-form myMargin" >
+              <div class="form-row">
+                <div class="col-lg-12 col-md-12 form-group">
+                  <h4 class="card-title myTextCenter">Waiting Confirmation</h4>            
+                </div>
 
-          <div id= "mousonBar" class="col-lg-12 mt-12 mt-lg-0 myRestCard">
-            <div class="card shadow-lg p-3 mb-5 rounded myCard">
-              <img class="card-img-top img-fluid" src="assets/img/restaurants/mousonBar.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h4 id= "mousonBarName" class="card-title">Mouson Bar & Restaurant</h4>
-                <h6 id= "mousonBarAddress" class="card-title subTitle">Mpoumpoulinas 15, Nicosia, 1060</h6>
-                <p id= "mousonBarCuisine" class="card-text">International</p>
-                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat
-                  <span hidden>mousonBar</span>
-                </a>
-                <span id= "mousonBarKeywords" class="myKeywords myHidden">
-                  Brunch, dinner, Mouson, Muson, bar , international
-                </span>
+                <div class="col-lg-4 col-md-6 form-group">
+                  <input disabled type="text" name="name" class="form-control myFormTextBox" placeholder="Your Name">
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                  <input disabled type="email" class="form-control myFormTextBox" name="email" placeholder="Your Email">
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                  <input disabled type="text" class="form-control myFormTextBox" name="phone" placeholder="Your Phone">
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                  <input disabled type="date" name="date" class="form-control myFormTextBox" placeholder="Date">
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                  <select disabled name="inputTime" class="form-control myFormTextBox">
+                    <option value="09:00 AM">09:00 AM</option>
+                    <option value="09:30 AM">09:30 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="10:30 AM">10:30 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="11:30 AM">11:30 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="12:30 PM">12:30 PM</option>
+                    <option value="13:00 PM">13:00 PM</option>
+                    <option value="13:30 PM">13:30 PM</option>
+                    <option value="14:00 PM">14:00 PM</option>
+                    <option value="14:30 PM">14:30 PM</option>
+                    <option value="15:00 PM">15:00 PM</option>
+                    <option value="15:30 PM">15:30 PM</option>
+                    <option value="16:00 PM">16:00 PM</option>
+                    <option value="16:30 PM">16:30 PM</option>
+                    <option value="17:00 PM">17:00 PM</option>
+                    <option value="17:30 PM">17:30 PM</option>
+                    <option value="18:00 PM">18:00 PM</option>
+                    <option value="18:30 PM">18:30 PM</option>
+                    <option value="19:00 PM">19:00 PM</option>
+                    <option value="19:30 PM">19:30 PM</option>
+                    <option value="20:00 PM">20:00 PM</option>
+                    <option value="20:30 PM">20:30 PM</option>
+                    <option value="21:00 PM">21:00 PM</option>
+                    <option value="21:30 PM">21:30 PM</option>
+                    <option value="22:00 PM">22:00 PM</option>
+                    <option value="22:30 PM">22:30 PM</option>
+                    <option value="23:00 PM">23:00 PM</option>
+                    <option value="23:30 PM">23:30 PM</option>
+                  </select>           
+                 </div>
+    
+                <div class="col-lg-4 col-md-6 form-group">
+                  <input disabled type="number" class="form-control myFormTextBox" name="people" placeholder="# of people">
+                </div>
+    
+                <div class="col-lg-12 col-md-12 form-group">
+                  <textarea disabled class="form-control myFormTextBox" name="message" rows="5" placeholder="Message"></textarea>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 form-group avoidClicks">
+                  <input type="checkbox" name="chkBabyChair">
+                  <label for="chkBabyChair"> Baby Chair</label><br>
+                  <input type="checkbox" name="chkDisabledPerson">
+                  <label for="chkDisabledPerson"> Disabled Person</label><br>
+                  <input type="checkbox" name="chkCloseToTv">
+                  <label for="chkCloseToTv"> Close to TV</label><br>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group avoidClicks">
+                  <input type="radio" name="foodOrDrink" value="Food">
+                  <label for="radioFood">Food</label><br>
+                  <input type="radio" name="foodOrDrink" value="Drink">
+                  <label for="radioDrink">Drink</label><br>
+                  <input type="radio" name="foodOrDrink" value="Both">
+                  <label for="radioBoth">Both</label>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group avoidClicks">
+                  <input type="radio" name="smokerOrNonSmoker" value="Smoker">
+                  <label for="radioSmoker">Smoker</label><br>
+                  <input type="radio" name="smokerOrNonSmoker" value="Non-Smoker">
+                  <label for="radioNonSmoker">Non-Smoker</label><br>
+                </div>
+
+              <div class="text-center ">
+                <button type="submit" class= "myFormButton myButtonMargin">Confirm</button>
+                <button type="submit" class= "myFormButton myButtonMargin">Reject</button>
               </div>
-            </div>
+            </form>
           </div>
-        
-
         </div>
 
-      </div>
 
+      </div>
     </div>
-
     </span>
-
-    <span hidden id= "vwBookForm" class= "myView"> 
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Reservation</h2>
-          <p>Book a Table</p>
-        </div>
-
-        <form onsubmit="return false;" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-          <div class="form-row">
-            <div hidden class="col-lg-12 col-md-12 form-group">
-              <input disabled type="text" name="restaurant" class="form-control myFormTextBox" id="restaurant" placeholder="Restaurant">
-            </div>
-            <div class="col-lg-12 col-md-12 form-group">
-              <h4 id="lblName" class="card-title">Restaurant Name</h4>            
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control myFormTextBox" id="name" placeholder="Your Name">
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="email" class="form-control myFormTextBox" name="email" id="email" placeholder="Your Email">
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" class="form-control myFormTextBox" name="phone" id="phone" placeholder="Your Phone">
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="date" name="date" class="form-control myFormTextBox" id="date" placeholder="Date">
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <select id="inputTime" name="inputTime" class="form-control myFormTextBox">
-                <option value="09:00 AM">09:00 AM</option>
-                <option value="09:30 AM">09:30 AM</option>
-                <option value="10:00 AM">10:00 AM</option>
-                <option value="10:30 AM">10:30 AM</option>
-                <option value="11:00 AM">11:00 AM</option>
-                <option value="11:30 AM">11:30 AM</option>
-                <option value="12:00 PM">12:00 PM</option>
-                <option value="12:30 PM">12:30 PM</option>
-                <option value="13:00 PM">13:00 PM</option>
-                <option value="13:30 PM">13:30 PM</option>
-                <option value="14:00 PM">14:00 PM</option>
-                <option value="14:30 PM">14:30 PM</option>
-                <option value="15:00 PM">15:00 PM</option>
-                <option value="15:30 PM">15:30 PM</option>
-                <option value="16:00 PM">16:00 PM</option>
-                <option value="16:30 PM">16:30 PM</option>
-                <option value="17:00 PM">17:00 PM</option>
-                <option value="17:30 PM">17:30 PM</option>
-                <option value="18:00 PM">18:00 PM</option>
-                <option value="18:30 PM">18:30 PM</option>
-                <option value="19:00 PM">19:00 PM</option>
-                <option value="19:30 PM">19:30 PM</option>
-                <option value="20:00 PM">20:00 PM</option>
-                <option value="20:30 PM">20:30 PM</option>
-                <option value="21:00 PM">21:00 PM</option>
-                <option value="21:30 PM">21:30 PM</option>
-                <option value="22:00 PM">22:00 PM</option>
-                <option value="22:30 PM">22:30 PM</option>
-                <option value="23:00 PM">23:00 PM</option>
-                <option value="23:30 PM">23:30 PM</option>
-              </select>           
-             </div>
-
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="number" class="form-control myFormTextBox" name="people" id="people" placeholder="# of people">
-            </div>
-
-            <div class="col-lg-12 col-md-12 form-group">
-              <textarea class="form-control myFormTextBox" name="message" rows="5" id="message" placeholder="Message"></textarea>
-            </div>
-
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="checkbox" id="chkBabyChair" name="chkBabyChair">
-              <label for="chkBabyChair"> Baby Chair</label><br>
-              <input type="checkbox" id="chkDisabledPerson" name="chkDisabledPerson">
-              <label for="chkDisabledPerson"> Disabled Person</label><br>
-              <input type="checkbox" id="chkCloseToTv" name="chkCloseToTv">
-              <label for="chkCloseToTv"> Close to TV</label><br>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="radio" id="radioFood" name="foodOrDrink" value="Food">
-              <label for="radioFood">Food</label><br>
-              <input type="radio" id="radioDrink" name="foodOrDrink" value="Drink">
-              <label for="radioDrink">Drink</label><br>
-              <input type="radio" id="radioBoth" name="foodOrDrink" value="Both">
-              <label for="radioBoth">Both</label>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="radio" id="radioSmoker" name="smokerOrNonSmoker" value="Smoker">
-              <label for="radioSmoker">Smoker</label><br>
-              <input type="radio" id="radioNonSmoker" name="smokerOrNonSmoker" value="Non-Smoker">
-              <label for="radioNonSmoker">Non-Smoker</label><br>
-            </div>
-          </div>
-          <!-- <div class="form-group">
-            <textarea class="form-control myFormTextBox" name="message" rows="5" placeholder="Message"></textarea>
-          </div> -->
-
-          <div class="mb-3 myHidden">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-          </div>
-          <div class="text-center ">
-            <button id= "cmdBookFormSubmit" type="submit" class= "myFormButton myButtonMargin">Book a Table</button>
-            <button id= "cmdBookFormBack" type="submit" class= "myFormButton myButtonMargin">Back</button>
-          </div>
-        </form>
-
-      </div>
-    </span>
-    </section><!-- End BookEatApp Section -->
+    </section><!-- End Reservations Section -->
 
 
   </main><!-- End #main -->

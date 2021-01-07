@@ -37,6 +37,11 @@ showView = (v) => {
     m.hidden= false;
   }
 
+function jump(h){
+    var top = document.getElementById(h).offsetTop;
+    window.scrollTo(0, top);
+}
+
   showRestCards = (res) => {
     let all = document.getElementsByClassName("myRestCard");
     for (let i= 0; i < all.length; i++){
@@ -48,10 +53,6 @@ showView = (v) => {
     }
   }
 
-  function jump(h){
-    var top = document.getElementById(h).offsetTop;
-    window.scrollTo(0, top);
-}
 
   document.getElementById("cmdBookFormBack").onclick= () => {
     showView("vwSearch");
