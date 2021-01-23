@@ -130,8 +130,16 @@ function jump(h){
 
     // Update Status of already loaded reservations
     for (let i= 0; i < curr; i++) {
-      let status= document.getElementById("index"+i).children[0].children[0].children[0].children[0].children[0];
-      status.innerHTML= reservations[i]['status'];
+      try {
+        let status= document.getElementById("index"+i).children[0].children[0].children[0].children[0].children[0];
+        status.innerHTML= reservations[i]['status'];
+        if (reservations[i]['status']!= "Waiting Confirmation"){
+          document.getElementById("index"+i).hidden= true;
+        }
+      } catch (error) {
+        // Reservation's status is not "Waiting Confirmation" and probably was never created
+        // console.error(error);
+      }
     }
 
     // Add new reservations
@@ -182,8 +190,11 @@ function jump(h){
       btnConfirm.onclick= createUpdateStatusButton (i, "Confirmed");
       btnReject.onclick= createUpdateStatusButton (i, "Rejected");
 
-      reservationList.insertBefore(card, reservationList.firstChild);
+      if (reservations[i]['status']!= "Waiting Confirmation"){
+        continue;
+      }
 
+      reservationList.insertBefore(card, reservationList.firstChild);
     }
 
     window.myGlobalSpace.currentDisplayedReservations= reservations.length;
@@ -215,6 +226,8 @@ function jump(h){
       xhttp.open("POST", "https://bookeatbackend.herokuapp.com/post/updateResrvationStatus", true);
       xhttp.setRequestHeader("Content-type", "text/plain; charset=utf-8");
       xhttp.send(JSON.stringify(data));
+
+      alert ('The reservation status has been successfully changed to"' + status + '"');
     }
   }
 
