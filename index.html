@@ -97,21 +97,23 @@
           <h2>Book-Eat App</h2>
           <p>Choose a Restaurant</p>
         </div>
-
+        
         <div class="row">
           <div class="col-xs-12 col-lg-6 col-md-6 form-group myCenter">
 
-          <form onsubmit="return false;" class= "myForm">
-            <input type="text" name="search" placeholder="Search" class="myInput" id="txtSearch">
-            <input type="submit" value="Search" class= "myInputButton">
-          </form>
-          <br>
-          <br>
+            <form onsubmit="return false;" class= "myForm">
+              <input type="text" name="search" placeholder="Search" class="myInput" id="txtSearch">
+              <input type="submit" value="Search" class= "myInputButton">
+            </form>
+            <br>
+            <br>
+          </div>
         </div>
 
+      <div class="row">
         <div class="row myCenter" data-aos="zoom-in" data-aos-delay="200">
 
-          <div id= "mousonBar" class="col-lg-3 mt-3 mt-lg-0 myRestCard">
+          <div id= "mousonBar" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/mousonBar.jpg" alt="Card image cap">
               <div class="card-body">
@@ -128,7 +130,7 @@
             </div>
           </div>
 
-          <div id= "theOldStationPark" class="col-lg-3 mt-3 mt-lg-0 myRestCard">
+          <div id= "theOldStationPark" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/theOldStationPark.jpg" alt="Card image cap">
               <div class="card-body">
@@ -145,7 +147,7 @@
             </div>
           </div>
 
-          <div id= "cafeMercedes" class="col-lg-3 mt-3 mt-lg-0 myRestCard">
+          <div id= "cafeMercedes" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/cafeMercedes.jpg" alt="Card image cap">
               <div class="card-body">
@@ -162,7 +164,7 @@
             </div>
           </div>
 
-          <div id= "stouRoussia" class="col-lg-3 mt-3 mt-lg-0 myRestCard">
+          <div id= "stouRoussia" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/stouRoussia.jpg" alt="Card image cap">
               <div class="card-body">
@@ -179,6 +181,22 @@
             </div>
           </div>
         
+          <div id= "mockRest" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
+            <div class="card shadow-lg p-3 mb-5 rounded myCard">
+              <img class="card-img-top img-fluid" src="assets/img/restaurants/mockRest.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 id= "mockRestName" class="card-title">Mock Restaurant</h4> <br>
+                <h6 id= "mockRestAddress" class="card-title subTitle">Address</h6>
+                <p id= "mockRestCuisine" class="card-text">Cuisine</p>
+                <a href="javascript:void(0)" class="myButton BookEatButton">Book-Eat
+                  <span hidden>mockRest</span>
+                </a>
+                <span id= "mockRestKeywords" class="myKeywords myHidden">
+                  Mock Restaurant                
+                </span>
+              </div>
+            </div>
+          </div>
 
         </div>
 

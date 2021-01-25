@@ -133,9 +133,9 @@ function jump(h){
       try {
         let status= document.getElementById("index"+i).children[0].children[0].children[0].children[0].children[0];
         status.innerHTML= reservations[i]['status'];
-        if (reservations[i]['status']!= "Waiting Confirmation"){
-          document.getElementById("index"+i).hidden= true;
-        }
+        // if (reservations[i]['status']!= "Waiting Confirmation"){
+        //   document.getElementById("index"+i).hidden= true;
+        // }
       } catch (error) {
         // Reservation's status is not "Waiting Confirmation" and probably was never created
         // console.error(error);
@@ -190,9 +190,9 @@ function jump(h){
       btnConfirm.onclick= createUpdateStatusButton (i, "Confirmed");
       btnReject.onclick= createUpdateStatusButton (i, "Rejected");
 
-      if (reservations[i]['status']!= "Waiting Confirmation"){
-        continue;
-      }
+      // if (reservations[i]['status']!= "Waiting Confirmation"){
+      //   continue;
+      // }
 
       reservationList.insertBefore(card, reservationList.firstChild);
     }
