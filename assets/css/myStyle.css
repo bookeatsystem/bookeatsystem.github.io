@@ -68,6 +68,15 @@
   margin: 10px
 }
 
+.avoidClicks {
+  pointer-events: none!important;
+}
+
+.semiTransparent {
+  opacity: 50%;
+}
+
+
 
 
 

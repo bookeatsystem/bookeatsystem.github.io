@@ -31,6 +31,16 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/myStyle.css" rel="stylesheet">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NRSJ9SYBZR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NRSJ9SYBZR');
+  </script>
+
 </head>
 
 <body>
@@ -53,7 +63,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="book-a-table text-center">
-            <a href="#book-eat-app">Book a table</a>
+            <a href="#book-eat-app">Find a Restaurant</a>
           </li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -74,7 +84,7 @@
           <div class="btns">
             <a href="https://www.facebook.com/bookeatja" class="btn-book animated fadeInUp scrollto facebook mySocial"><i class="bx bxl-facebook"></i></a>
             <a href="https://www.instagram.com/bookeat_/" class="btn-book animated fadeInUp scrollto instagram mySocial"><i class="bx bxl-instagram"></i></a>
-            <a href="#book-eat-app" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+            <a href="#book-eat-app" class="btn-book animated fadeInUp scrollto">Find a Restaurant</a>
           </div>
         </div>
         <!-- <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
@@ -181,7 +191,7 @@
             </div>
           </div>
 
-          <div id= "notios" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
+          <div id= "notios" class="col-lg-4 mt-0 mt-lg-0 myRestCard avoidClicks semiTransparent">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/notios.jpg" alt="Card image cap">
               <div class="card-body">
@@ -198,7 +208,7 @@
             </div>
           </div>
 
-          <div id= "ouzeri" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
+          <div id= "ouzeri" class="col-lg-4 mt-0 mt-lg-0 myRestCard avoidClicks semiTransparent">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/ouzeri.jpg" alt="Card image cap">
               <div class="card-body">
@@ -215,7 +225,7 @@
             </div>
           </div>
 
-          <div id= "ouranos" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
+          <div id= "ouranos" class="col-lg-4 mt-0 mt-lg-0 myRestCard avoidClicks semiTransparent">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/ouranos.jpg" alt="Card image cap">
               <div class="card-body">
@@ -232,7 +242,7 @@
             </div>
           </div>
 
-          <div id= "medRest" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
+          <div id= "medRest" class="col-lg-4 mt-0 mt-lg-0 myRestCard avoidClicks semiTransparent">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/medRest.jpg" alt="Card image cap">
               <div class="card-body">
@@ -249,7 +259,7 @@
             </div>
           </div>
         
-          <div id= "mockRest" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
+          <div hidden id= "mockRest" class="col-lg-4 mt-0 mt-lg-0 myRestCard">
             <div class="card shadow-lg p-3 mb-5 rounded myCard">
               <img class="card-img-top img-fluid" src="assets/img/restaurants/mockRest.jpg" alt="Card image cap">
               <div class="card-body">
