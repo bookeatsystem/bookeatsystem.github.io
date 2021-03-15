@@ -31,6 +31,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/myStyle.css" rel="stylesheet">
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -135,8 +137,12 @@
                 <div class="col-lg-4 col-md-6 form-group">
                   <input disabled type="text" class="form-control myFormTextBox" name="phone" placeholder="Your Phone">
                 </div>
-                <div class="col-lg-4 col-md-6 form-group">
-                  <input disabled type="date" name="date" class="form-control myFormTextBox" placeholder="Date">
+                <div class="col-lg-4 col-md-6 form-group avoidClicks">
+                  <!-- <input disabled type="date" name="date" class="form-control myFormTextBox" placeholder="Date"> -->
+                  <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                    <input class="form-control myFormTextBox" type="text" placeholder="Date" readonly />
+                    <span class="input-group-addon"><i class="bx bxl-calendar"></i></span>
+                  </div>
                 </div>
                 <div class="col-lg-4 col-md-6 form-group">
                   <select disabled name="inputTime" class="form-control myFormTextBox">
@@ -307,6 +313,16 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/myScript.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <script>
+      $(function () {
+        $("#datepicker").datepicker({ 
+            autoclose: true, 
+            todayHighlight: true
+        });
+        });
+  </script>
 
 </body>
 

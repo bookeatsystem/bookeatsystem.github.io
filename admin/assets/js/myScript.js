@@ -153,7 +153,7 @@ function jump(h){
       let name= card.children[0].children[0].children[0].children[1].children[0];
       let email= card.children[0].children[0].children[0].children[2].children[0];
       let phone= card.children[0].children[0].children[0].children[3].children[0];
-      let date= card.children[0].children[0].children[0].children[4].children[0];
+      let date= card.children[0].children[0].children[0].children[4].children[0].children[0];
       let inputTime= card.children[0].children[0].children[0].children[5].children[0];
       let people= card.children[0].children[0].children[0].children[6].children[0];
       let message= card.children[0].children[0].children[0].children[7].children[0];
