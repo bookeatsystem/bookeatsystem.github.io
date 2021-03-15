@@ -80,8 +80,49 @@ function jump(h){
     let radioSmoker= document.getElementById("radioSmoker").checked;
     let radioNonSmoker= document.getElementById("radioNonSmoker").checked;
 
+    document.getElementById("name").classList.remove("wrongValue")
+    document.getElementById("email").classList.remove("wrongValue")
+    document.getElementById("phone").classList.remove("wrongValue")
+    document.getElementById("date").classList.remove("wrongValue")
+    document.getElementById("inputTime").classList.remove("wrongValue")
+    document.getElementById("people").classList.remove("wrongValue")
+    document.getElementById("divFoodDrinkBoth").classList.remove("wrongValue")
+    document.getElementById("divSmokerNonSmoker").classList.remove("wrongValue")
+
+    if (name== ""){
+      document.getElementById("name").classList.add("wrongValue")
+    }
+
+    if (email== ""){
+      document.getElementById("email").classList.add("wrongValue")
+    }
+
+    if (phone== ""){
+      document.getElementById("phone").classList.add("wrongValue")
+    }
+
+    if (date== ""){
+      document.getElementById("date").classList.add("wrongValue")
+    }
+
+    if (inputTime== ""){
+      document.getElementById("inputTime").classList.add("wrongValue")
+    }
+
+    if (people== ""){
+      document.getElementById("people").classList.add("wrongValue")
+    }
+
+    if (!radioFood && !radioDrink && !radioBoth){
+      document.getElementById("divFoodDrinkBoth").classList.add("wrongValue")
+    }
+
+    if (!radioSmoker && !radioNonSmoker){
+      document.getElementById("divSmokerNonSmoker").classList.add("wrongValue")
+    }
+
     if (name== "" || email== "" || phone== "" || date== "" || inputTime== "" || people== ""){
-      alert("Error: Please fill in all fields in the form.");
+      alert("Error: Please fill in all the required fields in the form.");
       return;
     }
 
@@ -94,6 +135,15 @@ function jump(h){
       alert("Error: Please select Smoker or Non-Smoker.");
       return;
     }
+
+    document.getElementById("name").classList.remove("wrongValue")
+    document.getElementById("email").classList.remove("wrongValue")
+    document.getElementById("phone").classList.remove("wrongValue")
+    document.getElementById("date").classList.remove("wrongValue")
+    document.getElementById("inputTime").classList.remove("wrongValue")
+    document.getElementById("people").classList.remove("wrongValue")
+    document.getElementById("divFoodDrinkBoth").classList.remove("wrongValue")
+    document.getElementById("divSmokerNonSmoker").classList.remove("wrongValue")
 
     // Clear fields
     document.getElementById("name").value= "";

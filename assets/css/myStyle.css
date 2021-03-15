@@ -76,7 +76,10 @@
   opacity: 50%;
 }
 
-
+.wrongValue {
+  border-style: solid!important;
+  border-color: yellow!important;
+}
 
 
 
